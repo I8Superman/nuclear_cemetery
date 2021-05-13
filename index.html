@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuclear Cemetary</title>
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/animations.css">
+</head>
+
+<body>
+    <div id="screen">
+        <div id="game">
+            <audio id="applause" src="sounds/applause.mp3"></audio>
+            <audio id="loose_music" src="sounds/loose.mp3"></audio>
+            <audio id="game_music" src="sounds/game_music.mp3" loop></audio>
+
+            <audio id="horde" src="sounds/zombie_horde.mp3" loop></audio>
+            <audio id="click" src="sounds/click.mp3"></audio>
+            <audio id="shot" src="sounds/shot.mp3"></audio>
+            <audio id="splat1" src="sounds/splat1.mp3"></audio>
+            <audio id="splat2" src="sounds/splat2.mp3"></audio>
+            <audio id="splat3" src="sounds/splat3.mp3"></audio>
+            <audio id="slash" src="sounds/slash.mp3"></audio>
+            <audio id="growl" src="sounds/growl.mp3"></audio>
+            <audio id="dying" src="sounds/dying.mp3"></audio>
+            <audio id="cry1" src="sounds/cry1.mp3"></audio>
+            <audio id="cry2" src="sounds/cry2.mp3"></audio>
+            <audio id="wounded1" src="sounds/wounded1.mp3"></audio>
+            <audio id="wounded2" src="sounds/wounded2.mp3"></audio>
+            <audio id="wounded3" src="sounds/wounded3.mp3"></audio>
+            <audio id="wind" src="sounds/wind.mp3"></audio>
+            <audio id="thankyou" src="sounds/thankyou.mp3"></audio>
+            <audio id="aaah" src="sounds/aaah.mp3"></audio>
+            <audio id="dontshoot" src="sounds/dontshoot.mp3"></audio>
+            <audio id="nooo" src="sounds/nooo.mp3"></audio>
+
+            <div id="loadscreen">
+                <div id="load_button"></div>
+            </div>
+            <div id="game_ui">
+                <div id="zombie_kills">
+                    <h2>kills <span id="number_of_kills">0</span></h2>
+                </div>
+                <div id="life_left">
+                    <div id="heart1" class="heart"></div>
+                    <div id="heart2" class="heart"></div>
+                    <div id="heart3" class="heart"></div>
+                </div>
+                <div id="overrun_risk">
+                    <div id="overrun_meter">
+                        <div id="liquid"></div>
+                    </div>
+                </div>
+                <div id="gusto">
+                    <h2>zombie gusto</h2>
+                </div>
+                <div id="pause">
+                    <div class="pause_button">
+                    </div>
+                </div>
+                <div id="settings">
+                    <div class="settings_button">
+                    </div>
+                </div>
+                <div id="timer"></div>
+            </div>
+            <div id="game_background"></div>
+            <div id="game_elements">
+                <div id="logo"></div>
+                <div id="back_hill"></div>
+                <div id="middle_hill"></div>
+                <div id="rear_tombstones"></div>
+                <div id="front_tombstones"></div>
+                <div id="front_hill"></div>
+                <div id="zombie13">
+                    <div class="sprite"></div>
+                </div>
+                <div id="zombie12">
+                    <div class="sprite"></div>
+                </div>
+                <div id="zombie11">
+                    <div class="sprite"></div>
+                </div>
+                <div id="zombie10">
+                    <div class="sprite"></div>
+                </div>
+
+                <div id="zombie9">
+                    <div class="sprite"></div>
+                </div>
+                <div id="zombie8">
+                    <div class="sprite"></div>
+                </div>
+                <div id="zombie7">
+                    <div class="sprite"></div>
+                </div>
+                <div id="zombie6">
+                    <div class="sprite"></div>
+                </div>
+                <div id="zombie5">
+                    <div class="sprite"></div>
+                </div>
+
+                <div id="zombie4">
+                    <div class="sprite"></div>
+                </div>
+                <div id="zombie3">
+                    <div class="sprite"></div>
+                </div>
+                <div id="zombie2">
+                    <div class="sprite"></div>
+                </div>
+                <div id="zombie1">
+                    <div class="sprite"></div>
+                </div>
+                <div id="ghost">
+                    <div class="sprite"></div>
+                </div>
+                <div id="cross">
+                    <div class="sprite"></div>
+                </div>
+                <div id="wounded"></div>
+            </div>
+        </div>
+        <div id="game_info">
+            <div id="story">
+                <div id="story_text">
+                    <p><b>Your regular sunday evening stroll through the lovely old cemetary hasn’t been the same since the government dumped some strange looking barrels in the area.</b></p>
+
+                    <p><b>Good thing you always bring your trusty BB gun. It comes in handy, when the dead become too restless!</b></p>
+                </div>
+            </div>
+            <div id="instructions"></div>
+            <div id="teachme_button"></div>
+            <div id="letsgo_button"></div>
+        </div>
+        <div id="start">
+            <audio id="intro_music" src="sounds/intro_music.mp3" loop></audio>
+            <div id="next_button"></div>
+        </div>
+        <div id="blood"></div>
+        <div id="gameover">
+            <div id="yougoteaten"></div>
+            <div id="tryagain_button"></div>
+        </div>
+        <div id="levelcomplete">
+            <div id="playagain_button"></div>
+            <div id="highscore"><span id="score">0</span></div>
+        </div>
+        <div id="settingsmenu">
+            <div id="back"></div>
+            <div id="soundfx_mute"></div>
+            <div id="music_mute"></div>
+            <div id="restart"></div>
+            <div id="home"></div>
+        </div>
+        <script src="cemetary.js"></script>
+    </div>
+</body></html>

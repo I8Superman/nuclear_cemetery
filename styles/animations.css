@@ -1,0 +1,1197 @@
+/*-> Zombie containers, sprites and their animated walking paths */
+
+/* --- zombie div containers and sprites ---> */
+
+#ghost {
+    position: absolute;
+}
+
+#ghost .sprite {
+    height: 10vw;
+    width: 10vw;
+    background-size: 100%;
+}
+
+.ghost_body {
+    background-image: url(../assets/friendly_ghost.svg);
+}
+
+#zombie1 {
+    position: absolute;
+}
+
+#zombie1 .sprite {
+    height: 10vw;
+    width: 10vw;
+    background-size: 100%;
+}
+
+#zombie2 {
+    position: absolute;
+}
+
+#zombie2 .sprite {
+    height: 10vw;
+    width: 10vw;
+    background-size: 100%;
+}
+
+#zombie3 {
+    position: absolute;
+}
+
+#zombie3 .sprite {
+    height: 10vw;
+    width: 10vw;
+    background-size: 100%;
+}
+
+#zombie4 {
+    position: absolute;
+}
+
+#zombie4 .sprite {
+    height: 10vw;
+    width: 10vw;
+    background-size: 100%;
+}
+
+#zombie5 {
+    position: absolute;
+}
+
+#zombie5 .sprite {
+    height: 10vw;
+    width: 10vw;
+    background-size: 100%;
+}
+
+#zombie6 {
+    position: absolute;
+}
+
+#zombie6 .sprite {
+    height: 10vw;
+    width: 10vw;
+    background-size: 100%;
+}
+
+#zombie7 {
+    position: absolute;
+}
+
+#zombie7 .sprite {
+    height: 10vw;
+    width: 10vw;
+    background-size: 100%;
+}
+
+#zombie8 {
+    position: absolute;
+}
+
+#zombie8 .sprite {
+    height: 10vw;
+    width: 10vw;
+    background-size: 100%;
+}
+
+#zombie9 {
+    position: absolute;
+}
+
+#zombie9 .sprite {
+    height: 10vw;
+    width: 10vw;
+    background-size: 100%;
+}
+
+#zombie10 {
+    position: absolute;
+}
+
+#zombie10 .sprite {
+    height: 10vw;
+    width: 10vw;
+    background-size: 100%;
+}
+
+#zombie11 {
+    position: absolute;
+}
+
+#zombie11 .sprite {
+    height: 10vw;
+    width: 10vw;
+    background-size: 100%;
+}
+
+#zombie12 {
+    position: absolute;
+}
+
+#zombie12 .sprite {
+    height: 10vw;
+    width: 10vw;
+    background-size: 100%;
+}
+
+#zombie13 {
+    position: absolute;
+}
+
+#zombie13 .sprite {
+    height: 10vw;
+    width: 10vw;
+    background-size: 100%;
+}
+
+
+/* --- near paths ---> */
+
+.path1 {
+    top: 35vw;
+    left: -10vw;
+    z-index: 7;
+    animation-name: walk_near_a_kf;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes walk_near_a_kf {
+    0% {
+        transform: scale(1);
+    }
+
+    40% {
+        transform: scale(1.5);
+        top: 38vw;
+        left: 2vw;
+    }
+
+    70% {
+        transform: scale(2);
+        top: 45vw;
+        left: 8vw;
+    }
+
+    97% {
+        transform: scale(3);
+        top: 43vw;
+        left: 12vw;
+    }
+    100% {
+        transform: scale(10);
+        top: 43vw;
+        left: 12vw;
+    }
+}
+
+.path2 {
+    bottom: -20vw;
+    left: 15vw;
+    z-index: 7;
+    animation-name: walk_near_b_kf;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes walk_near_b_kf {
+    0% {
+        transform: scale(1.5);
+    }
+
+    50% {
+        bottom: 0vw;
+        left: 20vw;
+    }
+
+    97% {
+        transform: scale(3);
+        bottom: 4vw;
+        left: 25vw;
+    }
+    100% {
+        transform: scale(10);
+        bottom: 4vw;
+        left: 25vw;
+    }
+}
+
+.path3 {
+    bottom: -20vw;
+    right: 12vw;
+    z-index: 7;
+    animation-name: walk_near_c_kf;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes walk_near_c_kf {
+    0% {
+        transform: scale(1.5);
+    }
+
+    50% {
+        bottom: 0vw;
+        right: 15vw;
+    }
+
+    97% {
+        transform: scale(3);
+        bottom: 4vw;
+        right: 18vw;
+    }
+    100% {
+        transform: scale(10);
+        bottom: 4vw;
+        right: 18vw;
+    }
+}
+
+.path4 {
+    top: 35vw;
+    right: -10vw;
+    z-index: 8;
+    animation-name: walk_near_d_kf;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes walk_near_d_kf {
+    0% {
+        transform: scale(1);
+    }
+
+    40% {
+        transform: scale(1.5);
+        top: 38vw;
+        right: 2vw;
+    }
+
+    70% {
+        transform: scale(2);
+        top: 45vw;
+        right: 8vw;
+    }
+
+    97% {
+        transform: scale(3);
+        top: 43vw;
+        right: 12vw;
+    }
+    100% {
+        transform: scale(10);
+        top: 43vw;
+        right: 12vw;
+    }
+}
+
+
+/* --- front paths ---> */
+
+.path5 {
+    top: 42vw;
+    left: -3vw;
+    z-index: 5;
+    animation-name: walk_front_a_kf;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes walk_front_a_kf {
+    0% {
+        transform: scale(0.8);
+    }
+
+    40% {
+        transform: scale(1.2);
+        top: 30vw;
+        left: 10vw;
+    }
+
+    70% {
+        transform: scale(2);
+        top: 42vw;
+        left: 15vw;
+        z-index: 6;
+    }
+
+    97% {
+        transform: scale(3);
+        top: 45vw;
+        left: 10vw;
+        z-index: 7;
+    }
+    100% {
+        transform: scale(10);
+        top: 45vw;
+        left: 10vw;
+        z-index: 8;
+    }
+}
+
+.path6 {
+    top: 50vw;
+    left: 40vw;
+    z-index: 5;
+    animation-name: walk_front_b_kf;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes walk_front_b_kf {
+    0% {
+        transform: scale(0.8);
+    }
+
+    40% {
+        transform: scale(1.2);
+        top: 37vw;
+        left: 35vw;
+    }
+
+    70% {
+        transform: scale(2);
+        top: 42vw;
+        left: 33vw;
+        z-index: 6;
+    }
+
+    97% {
+        transform: scale(3);
+        top: 45vw;
+        left: 30vw;
+        z-index: 7;
+    }
+    100% {
+        transform: scale(10);
+        top: 45vw;
+        left: 30vw;
+        z-index: 8;
+    }
+}
+
+/* --- middle paths ---> */
+
+.path7 {
+    top: 42vw;
+    left: 55vw;
+    z-index: 3;
+    animation-name: walk_middle_a_kf;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes walk_middle_a_kf {
+    0% {
+        transform: scale(0.5);
+    }
+
+    20% {
+        transform: scale(0.6);
+        top: 34vw;
+        left: 50vw;
+    }
+
+    30% {
+        transform: scale(0.8);
+        top: 34vw;
+        left: 48vw;
+        z-index: 3;
+    }
+
+    35% {
+        transform: scale(0.9);
+        top: 35vw;
+        left: 47vw;
+        z-index: 5;
+    }
+
+    50% {
+        transform: scale(1);
+        top: 45vw;
+        left: 45vw;
+    }
+
+    70% {
+        transform: scale(1.5);
+        top: 36vw;
+        left: 40vw;
+    }
+
+    80% {
+        transform: scale(2);
+        top: 40vw;
+        left: 41vw;
+    }
+
+    97% {
+        transform: scale(3);
+        top: 47vw;
+        left: 45vw;
+        z-index: 6;
+    }
+    100% {
+        transform: scale(10);
+        top: 47vw;
+        left: 45vw;
+        z-index: 8;
+    }
+}
+
+.path8 {
+    top: 40vw;
+    left: 67vw;
+    z-index: 3;
+    animation-name: walk_middle_b_kf;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes walk_middle_b_kf {
+    0% {
+        transform: scale(0.5);
+    }
+
+    20% {
+        transform: scale(0.6);
+        top: 30vw;
+        left: 65vw;
+        z-index: 3;
+    }
+
+    30% {
+        transform: scale(0.8);
+        top: 31vw;
+        left: 63vw;
+        z-index: 5;
+    }
+
+    40% {
+        transform: scale(0.9);
+        top: 35vw;
+        left: 62vw;
+    }
+
+    50% {
+        transform: scale(1);
+        top: 37vw;
+        left: 61vw;
+        z-index: 6;
+    }
+
+    70% {
+        transform: scale(1.5);
+        top: 45vw;
+        left: 60vw;
+        z-index: 6;
+    }
+
+    80% {
+        transform: scale(2);
+        top: 43vw;
+        left: 61vw;
+        z-index: 6;
+    }
+
+    97% {
+        transform: scale(3);
+        top: 42vw;
+        left: 62vw;
+        z-index: 7;
+    }
+    100% {
+        transform: scale(10);
+        top: 42vw;
+        left: 62vw;
+        z-index: 8;
+    }
+}
+
+.path9 {
+    top: 37vw;
+    left: 95vw;
+    z-index: 3;
+    animation-name: walk_middle_c_kf;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes walk_middle_c_kf {
+    0% {
+        transform: scale(0.5);
+    }
+
+    20% {
+        transform: scale(0.6);
+        top: 29vw;
+        left: 88vw;
+        z-index: 3;
+    }
+
+    30% {
+        transform: scale(0.8);
+        top: 28vw;
+        left: 90vw;
+        z-index: 5;
+    }
+
+    40% {
+        transform: scale(1);
+        top: 32vw;
+        left: 90vw;
+    }
+
+    50% {
+        transform: scale(1.2);
+        top: 34vw;
+        left: 85vw;
+        z-index: 6;
+    }
+
+    80% {
+        transform: scale(2);
+        top: 40vw;
+        left: 80vw;
+        z-index: 7;
+    }
+
+    97% {
+        transform: scale(3);
+        top: 45vw;
+        left: 84vw;
+        z-index: 7;
+    }
+    100% {
+        transform: scale(10);
+        top: 45vw;
+        left: 84vw;
+        z-index: 8;
+    }
+}
+
+/* --- back paths ---> */
+
+.path10 {
+    top: 29vw;
+    left: 15vw;
+    z-index: 1;
+    animation-name: walk_back_a_kf;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes walk_back_a_kf {
+    0% {
+        transform: scale(0.4);
+    }
+
+    10% {
+        transform: scale(0.4);
+        top: 22vw;
+        left: 15vw;
+        z-index: 1;
+    }
+
+    15% {
+        transform: scale(0.5);
+        top: 23vw;
+        left: 13vw;
+        z-index: 3;
+    }
+
+    35% {
+        top: 28vw;
+        left: 3vw;
+        z-index: 3;
+    }
+
+    60% {
+        transform: scale(0.7);
+        top: 45vw;
+        left: 15vw;
+        z-index: 3;
+    }
+
+    75% {
+        transform: scale(0.8);
+        top: 34vw;
+        left: 18vw;
+        z-index: 5;
+    }
+
+    80% {
+        transform: scale(1);
+        top: 33vw;
+        left: 15vw;
+        z-index: 6;
+    }
+
+    90% {
+        transform: scale(1.8);
+        top: 40vw;
+        left: 10vw;
+        z-index: 6;
+    }
+
+    97% {
+        transform: scale(3);
+        top: 45vw;
+        left: 25vw;
+        z-index: 7;
+    }
+    100% {
+        transform: scale(10);
+        top: 45vw;
+        left: 25vw;
+        z-index: 8;
+    }
+}
+
+.path11 {
+    top: 29vw;
+    left: 17vw;
+    z-index: 1;
+    animation-name: walk_back_b_kf;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes walk_back_b_kf {
+    0% {
+        transform: scale(0.4);
+    }
+
+    10% {
+        transform: scale(0.4);
+        top: 22vw;
+        left: 17vw;
+        z-index: 1;
+    }
+
+    15% {
+        transform: scale(0.5);
+        top: 23vw;
+        left: 19vw;
+        z-index: 3;
+    }
+
+    30% {
+        top: 28vw;
+        left: 25vw;
+        z-index: 3;
+    }
+
+    40% {
+        transform: scale(0.7);
+    }
+
+    60% {
+        transform: scale(0.8);
+        top: 45vw;
+        left: 30vw;
+        z-index: 3;
+    }
+
+    70% {
+        transform: scale(0.9);
+        top: 36vw;
+        left: 32vw;
+        z-index: 5;
+    }
+
+    80% {
+        transform: scale(1.2);
+        top: 38vw;
+        left: 35vw;
+        z-index: 6;
+    }
+
+    90% {
+        transform: scale(1.8);
+        top: 42vw;
+        left: 35vw;
+        z-index: 6;
+    }
+
+    97% {
+        transform: scale(3);
+        top: 45vw;
+        left: 30vw;
+        z-index: 7;
+    }
+    100% {
+        transform: scale(10);
+        top: 45vw;
+        left: 30vw;
+        z-index: 8;
+    }
+}
+
+.path12 {
+    top: 29vw;
+    left: 30vw;
+    z-index: 1;
+    animation-name: walk_back_c_kf;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes walk_back_c_kf {
+    0% {
+        transform: scale(0.3);
+    }
+
+    7% {
+        transform: scale(0.3);
+        top: 20vw;
+        left: 35vw;
+        z-index: 1;
+    }
+
+    10% {
+        z-index: 3;
+    }
+
+    15% {
+        transform: scale(0.4);
+        top: 25vw;
+        left: 40vw;
+        z-index: 3;
+    }
+
+    25% {
+        top: 31vw;
+        left: 35vw;
+        z-index: 3;
+    }
+
+    40% {
+        top: 43vw;
+        left: 48vw;
+        z-index: 3;
+    }
+
+    55% {
+        transform: scale(0.7);
+        top: 33vw;
+        left: 52vw;
+        z-index: 3;
+    }
+
+    60% {
+        transform: scale(0.8);
+        top: 35vw;
+        left: 49vw;
+        z-index: 5;
+    }
+
+    70% {
+        transform: scale(1);
+        top: 45vw;
+        left: 44vw;
+    }
+
+    78% {
+        transform: scale(1.2);
+        top: 36vw;
+        left: 43vw;
+        z-index: 5;
+    }
+
+    83% {
+        transform: scale(1.4);
+        top: 38vw;
+        left: 39vw;
+        z-index: 7;
+    }
+
+    90% {
+        transform: scale(2);
+        top: 42vw;
+        left: 34vw;
+        z-index: 7;
+    }
+
+    97% {
+        transform: scale(3);
+        top: 45vw;
+        left: 45vw;
+        z-index: 7;
+    }
+    100% {
+        transform: scale(10);
+        top: 45vw;
+        left: 45vw;
+        z-index: 8;
+    }
+}
+
+.path13 {
+    top: 32vw;
+    left: 55vw;
+    z-index: 1;
+    animation-name: walk_back_d_kf;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes walk_back_d_kf {
+    0% {
+        transform: scale(0.3);
+    }
+
+    10% {
+        transform: scale(0.3);
+        top: 26vw;
+        left: 60vw;
+        z-index: 1;
+    }
+
+    15% {
+        transform: scale(0.4);
+        top: 27vw;
+        left: 59vw;
+        z-index: 3;
+    }
+
+    30% {
+        top: 31vw;
+        left: 52vw;
+        z-index: 3;
+    }
+
+    40% {
+        transform: scale(0.6);
+    }
+
+    50% {
+        transform: scale(0.6);
+        top: 40vw;
+        left: 60vw;
+        z-index: 3;
+    }
+
+    65% {
+        transform: scale(0.6);
+        top: 30vw;
+        left: 65vw;
+        z-index: 3;
+    }
+
+    75% {
+        transform: scale(0.9);
+        top: 32vw;
+        left: 68vw;
+        z-index: 5;
+    }
+
+    80% {
+        z-index: 6;
+    }
+
+    85% {
+        transform: scale(1.2);
+        top: 35vw;
+        left: 75vw;
+    }
+
+    93% {
+        transform: scale(1.8);
+        top: 42vw;
+        left: 65vw;
+        z-index: 7;
+    }
+
+    97% {
+        transform: scale(3);
+        top: 45vw;
+        left: 68vw;
+        z-index: 7;
+    }
+    100% {
+        transform: scale(10);
+        top: 45vw;
+        left: 68vw;
+        z-index: 8;
+    }
+}
+
+
+/*--- Animation modifiers ---*/
+
+.color1 {
+    background-image: url(../assets/green.svg);
+}
+
+.color2 {
+    background-image: url(../assets/brown.svg);
+}
+
+.color3 {
+    background-image: url(../assets/grey.svg);
+}
+
+.speed1 {
+    animation-duration: 1s;
+}
+
+.speed2 {
+    animation-duration: 2s;
+}
+
+.speed3 {
+    animation-duration: 3s;
+}
+
+.speed4 {
+    animation-duration: 4s;
+}
+
+.speed5 {
+    animation-duration: 5s;
+}
+
+.speed6 {
+    animation-duration: 6s;
+}
+
+.speed7 {
+    animation-duration: 7s;
+}
+
+.speed8 {
+    animation-duration: 8s;
+}
+
+.speed9 {
+    animation-duration: 9s;
+}
+
+.speed10 {
+    animation-duration: 10s;
+}
+
+.speed11 {
+    animation-duration: 11s;
+}
+
+.speed12 {
+    animation-duration: 12s;
+}
+
+.speed13 {
+    animation-duration: 13s;
+}
+
+.speed14 {
+    animation-duration: 14s;
+}
+
+.speed15 {
+    animation-duration: 15s;
+}
+
+
+.delay1 {
+    animation-delay: 1s;
+}
+
+.delay2 {
+    animation-delay: 2s;
+}
+
+.delay3 {
+    animation-delay: 3s;
+}
+
+.delay4 {
+    animation-delay: 4s;
+}
+
+.delay5 {
+    animation-delay: 5s;
+}
+
+.delay6 {
+    animation-delay: 6s;
+}
+
+.delay7 {
+    animation-delay: 7s;
+}
+
+.delay8 {
+    animation-delay: 8s;
+}
+
+.delay9 {
+    animation-delay: 9s;
+}
+
+.delay10 {
+    animation-delay: 10s;
+}
+
+.delay11 {
+    animation-delay: 11s;
+}
+
+.delay12 {
+    animation-delay: 12s;
+}
+
+
+/*
+.rotate1 {
+    animation-name: rotate_kf;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotate_kf {
+    0% {}
+
+    50% {
+        transform: rotate(5deg);
+    }
+
+    100% {
+        transform: rotate(-5deg);
+    }
+}
+*/
+
+
+/*--- zombie states ---*/
+
+
+.splat {
+    background-image: url(../assets/splat.svg);
+    animation-name: splat_kf;
+    animation-duration: 0.4s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes splat_kf {
+    0% {
+        transform: scale(0.5);
+    }
+
+    40% {
+        transform: scale(2) rotate(20deg);
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(0.5) rotate(40deg);
+        opacity: 0;
+    }
+}
+
+.ghost_splat {
+    background-image: url(../assets/ghost_splat.svg);
+    animation-name: ghostsplat_kf;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes ghostsplat_kf {
+    0% {
+        transform: scale(0.5);
+    }
+
+    40% {
+        transform: scale(2) rotate(20deg);
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1) rotate(40deg);
+        opacity: 0;
+    }
+}
+
+.wound {
+    width: 60vw;
+    height: 40vw;
+    background-image: url(../assets/claw_attack.svg);
+    background-size: 100%;
+    animation-name: wound_kf;
+    animation-duration: 0.4s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    pointer-events: none;
+}
+
+@keyframes wound_kf {
+    0% {
+        opacity: 0;
+        bottom: 5vw;
+        left: -60vw;
+    }
+
+    1% {
+        opacity: 0;
+        bottom: 5vw;
+        left: 20vw;
+    }
+
+    15% {
+        opacity: 1;
+        bottom: 5vw;
+        left: 20vw;
+    }
+
+    85% {
+        opacity: 1;
+        bottom: 5vw;
+        left: 20vw;
+    }
+
+    99% {
+        opacity: 0;
+        bottom: 5vw;
+        left: 20vw;
+    }
+
+    100% {
+        opacity: 0;
+        bottom: 5vw;
+        left: -60vw;
+    }
+}
+
+/*--- Modifiers ---*/
+
+/*-> nosplat is an empty animation that can be used just to trigger eventlisteners */
+
+.nosplat {
+    animation-name: nosplat_kf;
+    animation-duration: 0.4s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes nosplat_kf {
+    0% {}
+
+    100% {}
+}
+
+.pause {
+    animation-play-state: paused;
+}

@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+h2 {
+    font-family: 'Permanent Marker', cursive;
+    color: aliceblue;
+    margin: 0px;
+}
+
+body {
+    margin: 0px;
+    background-color: black;
+}
+
+/*--- Major elements ---*/
+
+#screen {
+    position: relative;
+    width: 100vw;
+    height: 56.25vw;
+    
+}
+#game {
+    position: absolute;
+    width: 100vw;
+    height: 56.25vw;
+    overflow: hidden;
+}
+
+#game_background {
+    position: absolute;
+    background-image: url(../images/cemetary_background.svg);
+    width: 100vw;
+    height: 56.25vw;
+    background-size: 100%;
+    z-index: -1;
+}
+
+#game_elements {
+    position: absolute;
+    width: 100vw;
+    height: 56.25vw;
+    overflow: hidden;
+}
+
+#game_ui {
+    position: absolute;
+    width: 99vw;
+    height: 10vw;
+    border: 0.5vw green;
+}
+
+#logo {
+    position:absolute;
+    width: 10vw;
+    height: 4.83vw;
+    background-image: url(../images/logo_300x145.png);
+    background-size: 100%;
+    position:absolute;
+    top: 49vw;
+    left: 2vw;
+}
+
+/*--- Interactive game elements ---*/ 
+
+/*-> Zombie containers */
+
+
+#zombie_container1 {
+    position: absolute;
+}
+
+#zombie_container1 > .sprite {
+    position: absolute;
+}
+
+#zombie_container2 {
+    position: absolute;
+}
+
+#zombie_container2 > .sprite {
+    position: absolute;
+}
+
+#zombie_container3 {
+    position: absolute;
+}
+
+#zombie_container3 > .sprite {
+    position: absolute;
+}
+
+#zombie_container4 {
+    position: absolute;
+}
+
+#zombie_container4 > .sprite {
+    position: absolute;
+}
+
+#zombie_container5 {
+    position: absolute;
+}
+
+#zombie_container5 > .sprite {
+    position: absolute;
+}
+
+#zombie_container6 {
+    position: absolute;
+}
+
+#zombie_container6 > .sprite {
+}
+
+
+/*--- Zombie trait modifiers ---*/
+
+.color1 {
+    background-image: url(../assets/grey.svg);
+    background-size: 100%;
+}
+
+.color2 {
+    background-image: url(../assets/brown.svg);
+    background-size: 100%;
+}
+
+.color3 {
+    background-image: url(../assets/green.svg);
+    background-size: 100%;
+}
+
+.size1 {
+    height: 12vw;
+    width: 12vw;
+}
+
+.size2 {
+    height: 10vw;
+    width: 10vw;
+}
+
+.size3 {
+    height: 8vw;
+    width: 8vw;
+}
+
+.rotate1 {
+    animation-name: rotate_kf;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotate_kf {
+    0% {
+    
+    }
+    50% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(-5deg);
+    }
+}
+
+
+
+.speed1 {
+    animation-duration: 3s;
+}
+
+.speed2 {
+    animation-duration: 4s;
+}
+
+.speed3 {
+    animation-duration: 5s;
+}
+
+.speed4 {
+    animation-duration: 5s;
+}
+
+.speed5 {
+    animation-duration: 6s;
+}
+
+.speed6 {
+    animation-duration: 7s;
+}
+
+
+.delay1 {
+    animation-delay: 1s;
+}
+
+.delay2 {
+    animation-delay: 2s;
+}
+
+.delay3 {
+    animation-delay: 3s;
+}
+
+.position1 {
+    left: 10vw;
+    top: -12vw;
+}
+
+.position2 {
+    left: 17vw;
+    top: -12vw;
+}
+
+.position3 {
+    left: 24vw;
+    top: -12vw;
+}
+
+.position4 {
+    left: 31vw;
+    top: -12vw;
+}
+
+.position5 {
+    left: 38vw;
+    top: -12vw;
+}
+
+.position6 {
+    left: 45vw;
+    top: -12vw;
+}
+
+.position7 {
+    left: 52vw;
+    top: -12vw;
+}
+
+.position8 {
+    left: 59vw;
+    top: -12vw;
+}
+
+.position9 {
+    left: 66vw;
+    top: -12vw;
+}
+
+.position10 {
+    left: 73vw;
+    top: -12vw;
+}
+
+.position11 {
+    left: 80vw;
+    top: -12vw;
+}
+
+.position12 {
+    left: 87vw;
+    top: -12vw;
+}
+
+
+/*-----UI elements-----*/ 
+
+#zombie_kills {
+    position:absolute;
+    top: 7vw;
+    left: 2.5vw;
+    font-size: 1.5vw;
+}
+
+#life_left {
+    position: absolute;
+    display: flex;
+    height: 3vw;
+    width: 11vw;
+    justify-content: space-between;
+    top: 2.5vw;
+    right: 3vw; 
+}
+
+.heart {
+    background-image: url(../assets/heart.svg);
+    background-size: 100%;
+    height: 3vw;
+    width: 3vw;
+}
+
+
+/*--- UI elements > the Overrun Meter!---*/
+
+#overrun_meter {
+    position: relative;
+    width: 20vw;
+    height: 4vw;
+    overflow: hidden;
+    top: 2vw;
+    left: 2vw;
+}
+
+#frame {
+    position: absolute;
+    background-image: url(../assets/frame.svg);
+    width: 20vw;
+    height: 4vw;
+    left: -0.5vw
+}
+
+#liquid {
+    background-image: url(../assets/liquid.svg);
+    position: absolute;
+    width: 20vw;
+    height: 4vw;
+    transition: left 1s;
+}
+
+.liquid_at_0 {
+    left: -18vw;
+}
+
+.liquid_at_1 {
+    left: -14.5vw;
+}
+
+.liquid_at_2 {
+    left: -11vw;
+}
+
+.liquid_at_3 {
+    left: -7.5vw;
+}
+
+.liquid_at_4 {
+    left: -4vw;
+}
+
+.liquid_at_5 {
+    left: -0.5vw;
+}
+
+/*--- Animations ---*/
+
+.falling {
+    animation-name: falling_kf;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes falling_kf {
+    0% {
+    
+    }
+    100% {
+        top: 60vw;
+    }
+}
+
+.splat {
+    background-image: url(../assets/splat.svg);
+    animation-name: splat_kf;
+    animation-duration: 0.4s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes splat_kf {
+     0% {
+         transform: scale(0.5);
+    }
+
+    40% {
+        transform: scale(2) rotate(20deg);
+    }
+
+    80% {
+        opacity: 1;
+    }
+    
+    100% {
+        transform: scale(0.5) rotate(40deg);
+        opacity: 0;
+    }
+}
+
+/*--- Modifiers ---*/
+
+.pause {
+    animation-play-state: paused;
+}
+
+
+#timer {
+    
+}
+
+/*-----Other game states-----*/ 
+
+#start {
+    display: none;
+}
+
+#gameover {
+    display: none;
+}
+
+#levelcomplete {
+    display: none;
+}
